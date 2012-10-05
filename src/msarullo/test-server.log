@@ -1,0 +1,376 @@
+2012-10-04 19:56:16 - __main__ - INFO - Started
+2012-10-04 19:56:16 - __main__ - INFO - Starting Content Generator...
+2012-10-04 19:56:16 - msarullo.tornadoapp.contentgen - DEBUG - Content Generator Thread beginning
+2012-10-04 19:56:16 - __main__ - INFO - Starting Tornado...
+2012-10-04 19:56:16 - __main__ - INFO - Server running on port 1313, Hit <CTRL-C> to stop
+2012-10-04 19:56:18 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (0)
+2012-10-04 19:56:20 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (1)
+2012-10-04 19:56:22 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (2)
+2012-10-04 19:56:24 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (3)
+2012-10-04 19:56:26 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (4)
+2012-10-04 19:56:28 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (5)
+2012-10-04 19:56:30 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (6)
+2012-10-04 19:56:32 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (7)
+2012-10-04 19:56:34 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (8)
+2012-10-04 19:56:36 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (9)
+2012-10-04 21:54:47 - __main__ - INFO - Started
+2012-10-04 21:54:47 - __main__ - INFO - Starting Content Generator...
+2012-10-04 21:54:47 - msarullo.tornadoapp.contentgen - DEBUG - Content Generator Thread beginning
+2012-10-04 21:54:47 - __main__ - INFO - Starting Tornado...
+2012-10-04 21:54:47 - __main__ - INFO - Server running on port 1313, Hit <CTRL-C> to stop
+2012-10-04 21:54:49 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (0)
+2012-10-04 21:54:51 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (1)
+2012-10-04 21:54:51 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-04 21:54:51 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-04 21:54:51 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-04 21:54:53 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (2)
+2012-10-04 21:54:53 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-04 21:54:53 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-04 21:54:53 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-04 21:54:55 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (3)
+2012-10-04 21:54:58 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (4)
+2012-10-04 21:55:00 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (5)
+2012-10-04 21:55:02 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (6)
+2012-10-04 21:55:04 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (7)
+2012-10-04 21:55:06 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (8)
+2012-10-04 21:55:08 - msarullo.tornadoapp.contentgen - DEBUG - Generated item:  (9)
+2012-10-05 09:10:25 - __main__ - INFO - Started
+2012-10-05 09:10:25 - __main__ - INFO - Starting Content Generator...
+2012-10-05 09:15:56 - __main__ - INFO - Started
+2012-10-05 09:15:56 - __main__ - INFO - Starting Content Generator...
+2012-10-05 09:17:16 - __main__ - INFO - Started
+2012-10-05 09:17:16 - __main__ - INFO - Starting Content Generator...
+2012-10-05 09:17:16 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Content Generator Thread beginning
+2012-10-05 09:17:16 - __main__ - INFO - Starting Tornado...
+2012-10-05 09:17:16 - __main__ - INFO - Server running on port 1313, Hit <CTRL-C> to stop
+2012-10-05 09:17:18 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (0)
+2012-10-05 09:17:20 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (1)
+2012-10-05 09:17:22 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (2)
+2012-10-05 09:17:24 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (3)
+2012-10-05 09:17:26 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (4)
+2012-10-05 09:17:28 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (5)
+2012-10-05 09:17:30 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (6)
+2012-10-05 09:17:32 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (7)
+2012-10-05 09:17:34 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (8)
+2012-10-05 09:17:36 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (9)
+2012-10-05 09:17:38 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (10)
+2012-10-05 09:17:40 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (11)
+2012-10-05 09:17:42 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (12)
+2012-10-05 09:17:44 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (13)
+2012-10-05 09:17:46 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (14)
+2012-10-05 09:17:46 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 09:17:46 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 09:17:46 - root - ERROR - Uncaught exception in /websocket
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 258, in wrapper
+    return callback(*args, **kwargs)
+  File "/Users/msarullo/workspace/sandbox/reutersnext/localtest/src/msarullo/tornadoapp/handlers/default.py", line 47, in open
+    getContentGenerator().addListener(self)
+  File "/Users/msarullo/workspace/sandbox/reutersnext/localtest/src/msarullo/utils/contentgen.py", line 109, in addListener
+    self.listeners.add(newGuy)
+AttributeError: 'list' object has no attribute 'add'
+2012-10-05 09:17:46 - root - ERROR - Uncaught exception, closing connection.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 305, in wrapper
+    callback(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/httpserver.py", line 268, in _on_headers
+    self.request_callback(self._request)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/web.py", line 1427, in __call__
+    handler._execute(transforms, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 123, in _execute
+    self.ws_connection.accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 458, in accept_connection
+    self._accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 500, in _accept_connection
+    self._receive_frame()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 529, in _receive_frame
+    self.stream.read_bytes(2, self._on_frame_start)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 166, in read_bytes
+    self._try_inline_read()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 382, in _try_inline_read
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 565, in _check_closed
+    raise IOError("Stream is closed")
+IOError: Stream is closed
+2012-10-05 09:17:47 - root - ERROR - Exception in callback <tornado.stack_context._StackContextWrapper object at 0x101c74c58>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/ioloop.py", line 421, in _run_callback
+    callback()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 305, in wrapper
+    callback(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/httpserver.py", line 268, in _on_headers
+    self.request_callback(self._request)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/web.py", line 1427, in __call__
+    handler._execute(transforms, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 123, in _execute
+    self.ws_connection.accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 458, in accept_connection
+    self._accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 500, in _accept_connection
+    self._receive_frame()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 529, in _receive_frame
+    self.stream.read_bytes(2, self._on_frame_start)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 166, in read_bytes
+    self._try_inline_read()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 382, in _try_inline_read
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 565, in _check_closed
+    raise IOError("Stream is closed")
+IOError: Stream is closed
+2012-10-05 09:17:47 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 09:17:48 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (15)
+2012-10-05 09:17:50 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (16)
+2012-10-05 09:17:51 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 09:17:51 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 09:17:51 - root - ERROR - Uncaught exception in /websocket
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 258, in wrapper
+    return callback(*args, **kwargs)
+  File "/Users/msarullo/workspace/sandbox/reutersnext/localtest/src/msarullo/tornadoapp/handlers/default.py", line 47, in open
+    getContentGenerator().addListener(self)
+  File "/Users/msarullo/workspace/sandbox/reutersnext/localtest/src/msarullo/utils/contentgen.py", line 109, in addListener
+    self.listeners.add(newGuy)
+AttributeError: 'list' object has no attribute 'add'
+2012-10-05 09:17:51 - root - ERROR - Uncaught exception, closing connection.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 305, in wrapper
+    callback(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/httpserver.py", line 268, in _on_headers
+    self.request_callback(self._request)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/web.py", line 1427, in __call__
+    handler._execute(transforms, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 123, in _execute
+    self.ws_connection.accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 458, in accept_connection
+    self._accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 500, in _accept_connection
+    self._receive_frame()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 529, in _receive_frame
+    self.stream.read_bytes(2, self._on_frame_start)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 166, in read_bytes
+    self._try_inline_read()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 382, in _try_inline_read
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 565, in _check_closed
+    raise IOError("Stream is closed")
+IOError: Stream is closed
+2012-10-05 09:17:51 - root - ERROR - Exception in callback <tornado.stack_context._StackContextWrapper object at 0x101f0e7e0>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/ioloop.py", line 421, in _run_callback
+    callback()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 305, in wrapper
+    callback(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/httpserver.py", line 268, in _on_headers
+    self.request_callback(self._request)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/web.py", line 1427, in __call__
+    handler._execute(transforms, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 123, in _execute
+    self.ws_connection.accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 458, in accept_connection
+    self._accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 500, in _accept_connection
+    self._receive_frame()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 529, in _receive_frame
+    self.stream.read_bytes(2, self._on_frame_start)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 166, in read_bytes
+    self._try_inline_read()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 382, in _try_inline_read
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 565, in _check_closed
+    raise IOError("Stream is closed")
+IOError: Stream is closed
+2012-10-05 09:17:51 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 09:17:52 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (17)
+2012-10-05 09:17:54 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (18)
+2012-10-05 09:17:56 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (19)
+2012-10-05 09:17:58 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (20)
+2012-10-05 09:18:00 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (21)
+2012-10-05 09:18:02 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (22)
+2012-10-05 09:18:04 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (23)
+2012-10-05 09:18:06 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (24)
+2012-10-05 09:18:08 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (25)
+2012-10-05 09:18:10 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (26)
+2012-10-05 09:18:12 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (27)
+2012-10-05 09:18:14 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (28)
+2012-10-05 09:18:16 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (29)
+2012-10-05 09:18:18 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (30)
+2012-10-05 09:18:20 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (31)
+2012-10-05 09:18:22 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (32)
+2012-10-05 09:18:24 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (33)
+2012-10-05 09:18:26 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (34)
+2012-10-05 09:18:28 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (35)
+2012-10-05 09:18:30 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (36)
+2012-10-05 09:18:32 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (37)
+2012-10-05 09:18:34 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (38)
+2012-10-05 09:18:36 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (39)
+2012-10-05 09:18:38 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (40)
+2012-10-05 09:18:40 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (41)
+2012-10-05 09:18:42 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (42)
+2012-10-05 09:18:44 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (43)
+2012-10-05 09:18:46 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (44)
+2012-10-05 09:18:48 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (45)
+2012-10-05 09:18:50 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (46)
+2012-10-05 09:18:52 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (47)
+2012-10-05 09:18:54 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (48)
+2012-10-05 09:18:56 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (49)
+2012-10-05 09:18:58 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (50)
+2012-10-05 09:19:00 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (51)
+2012-10-05 09:19:02 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (52)
+2012-10-05 09:19:04 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (53)
+2012-10-05 09:19:06 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (54)
+2012-10-05 09:19:08 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (55)
+2012-10-05 09:19:10 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (56)
+2012-10-05 09:19:12 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (57)
+2012-10-05 09:19:14 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (58)
+2012-10-05 09:19:16 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (59)
+2012-10-05 09:19:18 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (60)
+2012-10-05 09:19:20 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (61)
+2012-10-05 09:19:22 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (62)
+2012-10-05 09:19:24 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (63)
+2012-10-05 09:19:26 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (64)
+2012-10-05 09:19:28 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (65)
+2012-10-05 09:19:30 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (66)
+2012-10-05 09:19:32 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (67)
+2012-10-05 09:19:34 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (68)
+2012-10-05 09:19:36 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (69)
+2012-10-05 09:19:38 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (70)
+2012-10-05 09:19:40 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (71)
+2012-10-05 09:19:42 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (72)
+2012-10-05 09:19:44 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (73)
+2012-10-05 09:19:46 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (74)
+2012-10-05 09:19:48 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (75)
+2012-10-05 09:19:50 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (76)
+2012-10-05 09:19:52 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (77)
+2012-10-05 09:19:54 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (78)
+2012-10-05 09:19:56 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (79)
+2012-10-05 09:19:58 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (80)
+2012-10-05 09:20:00 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (81)
+2012-10-05 09:20:02 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (82)
+2012-10-05 09:20:04 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (83)
+2012-10-05 09:20:06 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (84)
+2012-10-05 09:20:08 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (85)
+2012-10-05 09:20:10 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (86)
+2012-10-05 09:20:12 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (87)
+2012-10-05 09:20:24 - __main__ - INFO - Started
+2012-10-05 09:20:24 - __main__ - INFO - Starting Content Generator...
+2012-10-05 09:20:24 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Content Generator Thread beginning
+2012-10-05 09:20:24 - __main__ - INFO - Starting Tornado...
+2012-10-05 09:20:25 - __main__ - INFO - Server running on port 1313, Hit <CTRL-C> to stop
+2012-10-05 09:20:26 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (0)
+2012-10-05 09:20:29 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (1)
+2012-10-05 09:20:29 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 09:20:29 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 09:20:31 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (2)
+2012-10-05 09:20:33 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (3)
+2012-10-05 09:20:35 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (4)
+2012-10-05 09:20:37 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (5)
+2012-10-05 09:20:39 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (6)
+2012-10-05 09:20:41 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (7)
+2012-10-05 09:20:46 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (8)
+2012-10-05 09:20:46 - msarullo.tornadoapp.handlers.default - INFO - Received message:  8
+2012-10-05 09:20:48 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (9)
+2012-10-05 09:20:48 - msarullo.tornadoapp.handlers.default - INFO - Received message:  9
+2012-10-05 09:20:50 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (10)
+2012-10-05 09:20:50 - msarullo.tornadoapp.handlers.default - INFO - Received message:  10
+2012-10-05 09:20:52 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (11)
+2012-10-05 09:20:52 - msarullo.tornadoapp.handlers.default - INFO - Received message:  11
+2012-10-05 09:20:54 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (12)
+2012-10-05 09:20:54 - msarullo.tornadoapp.handlers.default - INFO - Received message:  12
+2012-10-05 09:20:56 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (13)
+2012-10-05 09:20:56 - msarullo.tornadoapp.handlers.default - INFO - Received message:  13
+2012-10-05 09:20:58 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (14)
+2012-10-05 09:20:58 - msarullo.tornadoapp.handlers.default - INFO - Received message:  14
+2012-10-05 09:21:00 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (15)
+2012-10-05 09:21:00 - msarullo.tornadoapp.handlers.default - INFO - Received message:  15
+2012-10-05 09:21:02 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (16)
+2012-10-05 09:21:02 - msarullo.tornadoapp.handlers.default - INFO - Received message:  16
+2012-10-05 09:21:04 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (17)
+2012-10-05 09:21:04 - msarullo.tornadoapp.handlers.default - INFO - Received message:  17
+2012-10-05 09:21:06 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (18)
+2012-10-05 09:21:06 - msarullo.tornadoapp.handlers.default - INFO - Received message:  18
+2012-10-05 09:21:08 - msarullo.utils.contentgen.ContentGenerator.addListener - DEBUG - Successfully added listener
+2012-10-05 09:21:08 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 09:21:08 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (19)
+2012-10-05 09:21:08 - msarullo.tornadoapp.handlers.default - INFO - Received message:  19
+2012-10-05 09:21:10 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (20)
+2012-10-05 09:21:10 - msarullo.tornadoapp.handlers.default - INFO - Received message:  20
+2012-10-05 09:21:12 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (21)
+2012-10-05 09:21:12 - msarullo.tornadoapp.handlers.default - INFO - Received message:  21
+2012-10-05 09:21:14 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (22)
+2012-10-05 09:21:14 - msarullo.tornadoapp.handlers.default - INFO - Received message:  22
+2012-10-05 09:21:15 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 09:21:15 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 09:21:16 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (23)
+2012-10-05 09:21:16 - msarullo.tornadoapp.handlers.default - INFO - Received message:  23
+2012-10-05 09:21:19 - msarullo.utils.contentgen.ContentGenerator.addListener - DEBUG - Successfully added listener
+2012-10-05 09:21:19 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 09:27:13 - __main__ - INFO - Started
+2012-10-05 09:27:13 - __main__ - INFO - Starting Content Generator...
+2012-10-05 09:27:13 - __main__ - INFO - Starting Tornado...
+2012-10-05 09:27:13 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Content Generator Thread beginning
+2012-10-05 09:27:13 - __main__ - INFO - Server running on port 1313, Hit <CTRL-C> to stop
+2012-10-05 09:27:15 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (0)
+2012-10-05 09:27:17 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 09:27:17 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 09:27:17 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (1)
+2012-10-05 09:27:19 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (2)
+2012-10-05 09:27:21 - root - ERROR - Uncaught exception in /websocket
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 258, in wrapper
+    return callback(*args, **kwargs)
+  File "/Users/msarullo/workspace/sandbox/reutersnext/localtest/src/msarullo/tornadoapp/handlers/default.py", line 47, in open
+    getContentGenerator().addListener(self)
+  File "/Users/msarullo/workspace/sandbox/reutersnext/localtest/src/msarullo/utils/contentgen.py", line 113, in addListener
+    logger.info("Successfully added listener:  %d", newGuy.id())
+AttributeError: 'WebSocketHandler' object has no attribute 'id'
+2012-10-05 09:27:21 - root - ERROR - Uncaught exception, closing connection.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 305, in wrapper
+    callback(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/httpserver.py", line 268, in _on_headers
+    self.request_callback(self._request)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/web.py", line 1427, in __call__
+    handler._execute(transforms, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 123, in _execute
+    self.ws_connection.accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 458, in accept_connection
+    self._accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 500, in _accept_connection
+    self._receive_frame()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 529, in _receive_frame
+    self.stream.read_bytes(2, self._on_frame_start)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 166, in read_bytes
+    self._try_inline_read()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 382, in _try_inline_read
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 565, in _check_closed
+    raise IOError("Stream is closed")
+IOError: Stream is closed
+2012-10-05 09:27:21 - root - ERROR - Exception in callback <tornado.stack_context._StackContextWrapper object at 0x101c74c58>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/ioloop.py", line 421, in _run_callback
+    callback()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 305, in wrapper
+    callback(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/httpserver.py", line 268, in _on_headers
+    self.request_callback(self._request)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/web.py", line 1427, in __call__
+    handler._execute(transforms, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 123, in _execute
+    self.ws_connection.accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 458, in accept_connection
+    self._accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 500, in _accept_connection
+    self._receive_frame()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 529, in _receive_frame
+    self.stream.read_bytes(2, self._on_frame_start)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 166, in read_bytes
+    self._try_inline_read()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 382, in _try_inline_read
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 565, in _check_closed
+    raise IOError("Stream is closed")
+IOError: Stream is closed
+2012-10-05 09:27:21 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 09:27:21 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (3)
+2012-10-05 09:27:21 - msarullo.tornadoapp.handlers.default - INFO - Received message:  3
