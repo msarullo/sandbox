@@ -64,7 +64,7 @@ class ContentGenerator(Thread):
 
 
     def run(self):
-        logger = logging.getLogger(__name__ + ".ContentGenerator.run")
+        logger = logging.getLogger(__name__ + ".run")
         logger.debug("Content Generator Thread beginning")
         
         for x in count(0):
@@ -94,12 +94,12 @@ class ContentGenerator(Thread):
             finally:
                 self.lock.release()
         else:
-            logger = logging.getLogger(__name__ + ".ContentGenerator.gracefulStop")
+            logger = logging.getLogger(__name__ + ".gracefulStop")
             logger.error("Failed to acquire content generation lock, unable to shut down gracefully!")
             
         
     def addListener(self, newGuy):
-        logger = logging.getLogger(__name__ + ".ContentGenerator.addListener")
+        logger = logging.getLogger(__name__ + ".addListener")
         if not isinstance(newGuy, ContentGenerationListener):
             logger.error("Attempted to add listener of type:  " + type(newGuy))
             return False
@@ -110,7 +110,7 @@ class ContentGenerator(Thread):
             finally:
                 self.lock.release()
                 
-            logger.info("Successfully added listener:  %d", newGuy.id())
+            logger.info("Successfully added listener:  %d", id(newGuy))
             return True
         else:
             logger.error("Failed to acquire content generation lock, unable to add listener!")
@@ -118,7 +118,7 @@ class ContentGenerator(Thread):
         
         
     def dropListener(self, guyToDrop):
-        logger = logging.getLogger(__name__ + ".ContentGenerator.dropListener")
+        logger = logging.getLogger(__name__ + ".dropListener")
         
         if self.lock.acquire():
             try:
@@ -126,7 +126,7 @@ class ContentGenerator(Thread):
             finally:
                 self.lock.release()
                 
-            logger.info("Successfully dropped listener:  %d", guyToDrop.id())
+            logger.info("Successfully dropped listener:  %d", id(guyToDrop))
             return True
         else:
             logger.error("Failed to acquire content generation lock, unable to drop listener!")

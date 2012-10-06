@@ -1,5 +1,5 @@
 #!/bin/sh
 
-export PYTHONPATH=/Users/msarullo/workspace/sandbox/reutersnext/localtest/src
+export PYTHONPATH=/Users/msarullo/workspace/sandbox/reutersnext/sandbox/src
 
 python $PYTHONPATH/msarullo/entrypoint.py

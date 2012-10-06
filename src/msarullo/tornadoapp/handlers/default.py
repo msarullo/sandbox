@@ -19,7 +19,7 @@ mainPage = """
       var myWebSocket;
       
       function handleWebSocketMessage(msg) {{
-        $(myWebSocketTime).html(msg);
+        document.getElementById('myWebSocketTime').innerText = msg.data;
       }}
       
       function initializeWebSocket() {{
@@ -34,7 +34,7 @@ mainPage = """
     <br/><br/>
     Time page was rendered:  {dteNow}
     <br/><br/>
-    Time from web socket:  <span id="myWebSocketTime" />
+    Message from web socket:  <span id="myWebSocketTime" />
   </body>
 </html>
 """
@@ -46,13 +46,15 @@ class WebSocketHandler(websocket.WebSocketHandler, ContentGenerationListener):
     def open(self):
         getContentGenerator().addListener(self)
 
-    def onGeneration(self, msg):
-        self.logger.info('Received message:  %s', msg)
-        self.write_message(msg)
-
-    def close(self):
+    def on_message(self, msg):
+        self.logger.info('Received message from the client:  (%s)', msg)
+        
+    def on_close(self):
         getContentGenerator().dropListener(self)
-        super(WebSocketHandler, self).close()
+
+    def onGeneration(self, msg):
+        self.logger.info('Pushing message to the client:  (%s)', msg)
+        self.write_message(msg)
 
 
 class DefaultHandler(web.RequestHandler):

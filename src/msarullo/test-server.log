@@ -374,3 +374,902 @@ IOError: Stream is closed
 2012-10-05 09:27:21 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
 2012-10-05 09:27:21 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (3)
 2012-10-05 09:27:21 - msarullo.tornadoapp.handlers.default - INFO - Received message:  3
+2012-10-05 19:32:23 - __main__ - INFO - Started
+2012-10-05 19:32:23 - __main__ - INFO - Starting Content Generator...
+2012-10-05 19:32:23 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Content Generator Thread beginning
+2012-10-05 19:32:23 - __main__ - INFO - Starting Tornado...
+2012-10-05 19:32:23 - __main__ - INFO - Server running on port 1313, Hit <CTRL-C> to stop
+2012-10-05 19:32:25 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (0)
+2012-10-05 19:32:27 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (1)
+2012-10-05 19:32:28 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 19:32:28 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 19:32:28 - root - ERROR - Uncaught exception in /websocket
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 258, in wrapper
+    return callback(*args, **kwargs)
+  File "/Users/msarullo/workspace/sandbox/reutersnext/sandbox/src/msarullo/tornadoapp/handlers/default.py", line 47, in open
+    getContentGenerator().addListener(self)
+  File "/Users/msarullo/workspace/sandbox/reutersnext/sandbox/src/msarullo/utils/contentgen.py", line 113, in addListener
+    logger.info("Successfully added listener:  %d", newGuy.id())
+AttributeError: 'WebSocketHandler' object has no attribute 'id'
+2012-10-05 19:32:28 - root - ERROR - Uncaught exception, closing connection.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 305, in wrapper
+    callback(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/httpserver.py", line 268, in _on_headers
+    self.request_callback(self._request)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/web.py", line 1427, in __call__
+    handler._execute(transforms, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 123, in _execute
+    self.ws_connection.accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 458, in accept_connection
+    self._accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 500, in _accept_connection
+    self._receive_frame()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 529, in _receive_frame
+    self.stream.read_bytes(2, self._on_frame_start)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 166, in read_bytes
+    self._try_inline_read()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 382, in _try_inline_read
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 565, in _check_closed
+    raise IOError("Stream is closed")
+IOError: Stream is closed
+2012-10-05 19:32:28 - root - ERROR - Exception in callback <tornado.stack_context._StackContextWrapper object at 0x101d74c58>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/ioloop.py", line 421, in _run_callback
+    callback()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 305, in wrapper
+    callback(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/httpserver.py", line 268, in _on_headers
+    self.request_callback(self._request)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/web.py", line 1427, in __call__
+    handler._execute(transforms, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 123, in _execute
+    self.ws_connection.accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 458, in accept_connection
+    self._accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 500, in _accept_connection
+    self._receive_frame()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 529, in _receive_frame
+    self.stream.read_bytes(2, self._on_frame_start)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 166, in read_bytes
+    self._try_inline_read()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 382, in _try_inline_read
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 565, in _check_closed
+    raise IOError("Stream is closed")
+IOError: Stream is closed
+2012-10-05 19:32:28 - root - ERROR - Uncaught exception, closing connection.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 305, in wrapper
+    callback(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 229, in on_connection_close
+    self.on_close()
+  File "/Users/msarullo/workspace/sandbox/reutersnext/sandbox/src/msarullo/tornadoapp/handlers/default.py", line 53, in on_close
+    getContentGenerator().dropListener(self)
+  File "/Users/msarullo/workspace/sandbox/reutersnext/sandbox/src/msarullo/utils/contentgen.py", line 129, in dropListener
+    logger.info("Successfully dropped listener:  %d", guyToDrop.id())
+AttributeError: 'WebSocketHandler' object has no attribute 'id'
+2012-10-05 19:32:28 - root - ERROR - Exception in callback <tornado.stack_context._StackContextWrapper object at 0x101d74c00>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/ioloop.py", line 421, in _run_callback
+    callback()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 305, in wrapper
+    callback(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 229, in on_connection_close
+    self.on_close()
+  File "/Users/msarullo/workspace/sandbox/reutersnext/sandbox/src/msarullo/tornadoapp/handlers/default.py", line 53, in on_close
+    getContentGenerator().dropListener(self)
+  File "/Users/msarullo/workspace/sandbox/reutersnext/sandbox/src/msarullo/utils/contentgen.py", line 129, in dropListener
+    logger.info("Successfully dropped listener:  %d", guyToDrop.id())
+AttributeError: 'WebSocketHandler' object has no attribute 'id'
+2012-10-05 19:32:28 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 19:32:29 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (2)
+2012-10-05 19:32:31 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (3)
+2012-10-05 19:32:33 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (4)
+2012-10-05 19:32:35 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (5)
+2012-10-05 19:32:37 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (6)
+2012-10-05 19:32:39 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (7)
+2012-10-05 19:32:41 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (8)
+2012-10-05 19:32:43 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (9)
+2012-10-05 19:32:45 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (10)
+2012-10-05 19:32:47 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (11)
+2012-10-05 19:32:49 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (12)
+2012-10-05 19:32:51 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (13)
+2012-10-05 19:32:53 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (14)
+2012-10-05 19:32:55 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (15)
+2012-10-05 19:32:57 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (16)
+2012-10-05 19:32:59 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (17)
+2012-10-05 19:33:01 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (18)
+2012-10-05 19:33:03 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (19)
+2012-10-05 19:33:05 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (20)
+2012-10-05 19:33:07 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (21)
+2012-10-05 19:33:09 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (22)
+2012-10-05 19:33:11 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (23)
+2012-10-05 19:33:13 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (24)
+2012-10-05 19:33:15 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (25)
+2012-10-05 19:33:17 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (26)
+2012-10-05 19:33:19 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (27)
+2012-10-05 19:33:21 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (28)
+2012-10-05 19:33:23 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (29)
+2012-10-05 19:33:25 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (30)
+2012-10-05 19:33:27 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (31)
+2012-10-05 19:33:29 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (32)
+2012-10-05 19:33:31 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (33)
+2012-10-05 19:33:33 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (34)
+2012-10-05 19:33:35 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (35)
+2012-10-05 19:33:37 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (36)
+2012-10-05 19:33:39 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (37)
+2012-10-05 19:33:41 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (38)
+2012-10-05 19:33:43 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (39)
+2012-10-05 19:33:45 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (40)
+2012-10-05 19:33:47 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (41)
+2012-10-05 19:33:49 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (42)
+2012-10-05 19:33:51 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (43)
+2012-10-05 19:33:53 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (44)
+2012-10-05 19:33:55 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (45)
+2012-10-05 19:33:57 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (46)
+2012-10-05 19:33:59 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (47)
+2012-10-05 19:34:01 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (48)
+2012-10-05 19:34:03 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (49)
+2012-10-05 19:34:05 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (50)
+2012-10-05 19:34:07 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (51)
+2012-10-05 19:34:09 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (52)
+2012-10-05 19:34:11 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (53)
+2012-10-05 19:34:13 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (54)
+2012-10-05 19:34:15 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (55)
+2012-10-05 19:34:17 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (56)
+2012-10-05 19:34:19 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (57)
+2012-10-05 19:34:21 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (58)
+2012-10-05 19:34:23 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (59)
+2012-10-05 19:34:25 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (60)
+2012-10-05 19:34:27 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (61)
+2012-10-05 19:34:29 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (62)
+2012-10-05 19:34:31 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (63)
+2012-10-05 19:34:33 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (64)
+2012-10-05 19:34:35 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (65)
+2012-10-05 19:34:37 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (66)
+2012-10-05 19:34:39 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (67)
+2012-10-05 19:34:41 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (68)
+2012-10-05 19:34:43 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (69)
+2012-10-05 19:34:45 - msarullo.utils.contentgen.ContentGenerator.run - DEBUG - Generated item:  (70)
+2012-10-05 19:35:55 - __main__ - INFO - Started
+2012-10-05 19:35:55 - __main__ - INFO - Starting Content Generator...
+2012-10-05 19:35:55 - msarullo.utils.contentgen.run - DEBUG - Content Generator Thread beginning
+2012-10-05 19:35:55 - __main__ - INFO - Starting Tornado...
+2012-10-05 19:35:55 - __main__ - INFO - Server running on port 1313, Hit <CTRL-C> to stop
+2012-10-05 19:35:57 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (0)
+2012-10-05 19:35:59 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 19:35:59 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 19:35:59 - root - ERROR - Uncaught exception in /websocket
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 258, in wrapper
+    return callback(*args, **kwargs)
+  File "/Users/msarullo/workspace/sandbox/reutersnext/sandbox/src/msarullo/tornadoapp/handlers/default.py", line 47, in open
+    getContentGenerator().addListener(self)
+  File "/Users/msarullo/workspace/sandbox/reutersnext/sandbox/src/msarullo/utils/contentgen.py", line 113, in addListener
+    logger.info("Successfully added listener:  %d", newGuy.id)
+AttributeError: 'WebSocketHandler' object has no attribute 'id'
+2012-10-05 19:35:59 - root - ERROR - Uncaught exception, closing connection.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 305, in wrapper
+    callback(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/httpserver.py", line 268, in _on_headers
+    self.request_callback(self._request)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/web.py", line 1427, in __call__
+    handler._execute(transforms, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 123, in _execute
+    self.ws_connection.accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 458, in accept_connection
+    self._accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 500, in _accept_connection
+    self._receive_frame()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 529, in _receive_frame
+    self.stream.read_bytes(2, self._on_frame_start)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 166, in read_bytes
+    self._try_inline_read()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 382, in _try_inline_read
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 565, in _check_closed
+    raise IOError("Stream is closed")
+IOError: Stream is closed
+2012-10-05 19:35:59 - root - ERROR - Exception in callback <tornado.stack_context._StackContextWrapper object at 0x101871c00>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/ioloop.py", line 421, in _run_callback
+    callback()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 305, in wrapper
+    callback(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/httpserver.py", line 268, in _on_headers
+    self.request_callback(self._request)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/web.py", line 1427, in __call__
+    handler._execute(transforms, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 123, in _execute
+    self.ws_connection.accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 458, in accept_connection
+    self._accept_connection()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 500, in _accept_connection
+    self._receive_frame()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 529, in _receive_frame
+    self.stream.read_bytes(2, self._on_frame_start)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 166, in read_bytes
+    self._try_inline_read()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 382, in _try_inline_read
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 565, in _check_closed
+    raise IOError("Stream is closed")
+IOError: Stream is closed
+2012-10-05 19:35:59 - root - ERROR - Uncaught exception, closing connection.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 305, in wrapper
+    callback(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 229, in on_connection_close
+    self.on_close()
+  File "/Users/msarullo/workspace/sandbox/reutersnext/sandbox/src/msarullo/tornadoapp/handlers/default.py", line 53, in on_close
+    getContentGenerator().dropListener(self)
+  File "/Users/msarullo/workspace/sandbox/reutersnext/sandbox/src/msarullo/utils/contentgen.py", line 129, in dropListener
+    logger.info("Successfully dropped listener:  %d", guyToDrop.id)
+AttributeError: 'WebSocketHandler' object has no attribute 'id'
+2012-10-05 19:35:59 - root - ERROR - Exception in callback <tornado.stack_context._StackContextWrapper object at 0x101871ba8>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/ioloop.py", line 421, in _run_callback
+    callback()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/iostream.py", line 305, in wrapper
+    callback(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tornado/websocket.py", line 229, in on_connection_close
+    self.on_close()
+  File "/Users/msarullo/workspace/sandbox/reutersnext/sandbox/src/msarullo/tornadoapp/handlers/default.py", line 53, in on_close
+    getContentGenerator().dropListener(self)
+  File "/Users/msarullo/workspace/sandbox/reutersnext/sandbox/src/msarullo/utils/contentgen.py", line 129, in dropListener
+    logger.info("Successfully dropped listener:  %d", guyToDrop.id)
+AttributeError: 'WebSocketHandler' object has no attribute 'id'
+2012-10-05 19:35:59 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 19:35:59 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (1)
+2012-10-05 19:36:01 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (2)
+2012-10-05 19:36:03 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (3)
+2012-10-05 19:36:05 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (4)
+2012-10-05 19:36:07 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (5)
+2012-10-05 19:36:09 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (6)
+2012-10-05 19:36:11 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (7)
+2012-10-05 19:36:13 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (8)
+2012-10-05 19:36:15 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (9)
+2012-10-05 19:36:17 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (10)
+2012-10-05 19:36:19 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (11)
+2012-10-05 19:36:21 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (12)
+2012-10-05 19:36:23 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (13)
+2012-10-05 19:36:25 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (14)
+2012-10-05 19:36:27 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (15)
+2012-10-05 19:36:29 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (16)
+2012-10-05 19:36:31 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (17)
+2012-10-05 19:36:33 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (18)
+2012-10-05 19:38:54 - __main__ - INFO - Started
+2012-10-05 19:38:54 - __main__ - INFO - Starting Content Generator...
+2012-10-05 19:38:54 - msarullo.utils.contentgen.run - DEBUG - Content Generator Thread beginning
+2012-10-05 19:38:54 - __main__ - INFO - Starting Tornado...
+2012-10-05 19:38:54 - __main__ - INFO - Server running on port 1313, Hit <CTRL-C> to stop
+2012-10-05 19:38:56 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (0)
+2012-10-05 19:38:58 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 19:38:58 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 19:38:58 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (1)
+2012-10-05 19:38:58 - msarullo.utils.contentgen.addListener - INFO - Successfully added listener:  4324825616
+2012-10-05 19:38:58 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 19:39:00 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (2)
+2012-10-05 19:39:00 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (2)
+2012-10-05 19:39:02 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (3)
+2012-10-05 19:39:02 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (3)
+2012-10-05 19:39:04 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (4)
+2012-10-05 19:39:04 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (4)
+2012-10-05 19:39:06 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (5)
+2012-10-05 19:39:06 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (5)
+2012-10-05 19:39:08 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (6)
+2012-10-05 19:39:08 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (6)
+2012-10-05 19:39:10 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (7)
+2012-10-05 19:39:10 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (7)
+2012-10-05 19:39:12 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (8)
+2012-10-05 19:39:12 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (8)
+2012-10-05 19:39:14 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (9)
+2012-10-05 19:39:14 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (9)
+2012-10-05 19:39:16 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (10)
+2012-10-05 19:39:16 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (10)
+2012-10-05 19:39:18 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (11)
+2012-10-05 19:39:18 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (11)
+2012-10-05 19:39:20 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (12)
+2012-10-05 19:39:20 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (12)
+2012-10-05 19:39:22 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (13)
+2012-10-05 19:39:22 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (13)
+2012-10-05 19:39:24 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (14)
+2012-10-05 19:39:24 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (14)
+2012-10-05 19:39:26 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (15)
+2012-10-05 19:39:26 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (15)
+2012-10-05 19:39:28 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (16)
+2012-10-05 19:39:28 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (16)
+2012-10-05 19:39:30 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (17)
+2012-10-05 19:39:30 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (17)
+2012-10-05 19:39:32 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (18)
+2012-10-05 19:39:32 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (18)
+2012-10-05 19:39:34 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (19)
+2012-10-05 19:39:34 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (19)
+2012-10-05 19:39:36 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (20)
+2012-10-05 19:39:36 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (20)
+2012-10-05 19:39:38 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (21)
+2012-10-05 19:39:38 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (21)
+2012-10-05 19:39:40 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (22)
+2012-10-05 19:39:40 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (22)
+2012-10-05 19:39:42 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (23)
+2012-10-05 19:39:42 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (23)
+2012-10-05 19:39:44 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (24)
+2012-10-05 19:39:44 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (24)
+2012-10-05 19:39:46 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (25)
+2012-10-05 19:39:46 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (25)
+2012-10-05 19:44:57 - __main__ - INFO - Started
+2012-10-05 19:44:57 - __main__ - INFO - Starting Content Generator...
+2012-10-05 19:44:57 - msarullo.utils.contentgen.run - DEBUG - Content Generator Thread beginning
+2012-10-05 19:44:57 - __main__ - INFO - Starting Tornado...
+2012-10-05 19:44:57 - __main__ - INFO - Server running on port 1313, Hit <CTRL-C> to stop
+2012-10-05 19:44:59 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (0)
+2012-10-05 19:45:01 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 19:45:01 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 19:45:01 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 19:45:01 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (1)
+2012-10-05 19:45:03 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (2)
+2012-10-05 19:45:05 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (3)
+2012-10-05 19:45:07 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (4)
+2012-10-05 19:45:09 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (5)
+2012-10-05 19:45:11 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (6)
+2012-10-05 19:45:13 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (7)
+2012-10-05 19:45:15 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (8)
+2012-10-05 19:45:17 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (9)
+2012-10-05 19:45:19 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (10)
+2012-10-05 19:45:21 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (11)
+2012-10-05 19:45:23 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (12)
+2012-10-05 19:45:25 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (13)
+2012-10-05 19:45:27 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (14)
+2012-10-05 19:45:29 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (15)
+2012-10-05 19:45:31 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (16)
+2012-10-05 19:45:33 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (17)
+2012-10-05 19:45:35 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (18)
+2012-10-05 19:45:37 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (19)
+2012-10-05 19:45:39 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (20)
+2012-10-05 19:45:41 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (21)
+2012-10-05 19:45:43 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (22)
+2012-10-05 19:45:45 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (23)
+2012-10-05 19:45:47 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (24)
+2012-10-05 19:45:49 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (25)
+2012-10-05 19:45:51 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (26)
+2012-10-05 19:45:53 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (27)
+2012-10-05 19:45:55 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (28)
+2012-10-05 19:45:57 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (29)
+2012-10-05 19:45:59 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (30)
+2012-10-05 19:46:01 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (31)
+2012-10-05 19:46:03 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (32)
+2012-10-05 19:46:05 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (33)
+2012-10-05 19:46:07 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (34)
+2012-10-05 19:46:09 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (35)
+2012-10-05 19:46:11 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (36)
+2012-10-05 19:46:42 - __main__ - INFO - Started
+2012-10-05 19:46:42 - __main__ - INFO - Starting Content Generator...
+2012-10-05 19:46:42 - msarullo.utils.contentgen.run - DEBUG - Content Generator Thread beginning
+2012-10-05 19:46:42 - __main__ - INFO - Starting Tornado...
+2012-10-05 19:46:42 - __main__ - INFO - Server running on port 1313, Hit <CTRL-C> to stop
+2012-10-05 19:46:44 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (0)
+2012-10-05 19:46:46 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (1)
+2012-10-05 19:46:47 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 19:46:47 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 19:46:47 - msarullo.utils.contentgen.addListener - INFO - Successfully added listener:  4320619472
+2012-10-05 19:46:47 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 19:46:48 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (2)
+2012-10-05 19:46:48 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (2)
+2012-10-05 19:46:50 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (3)
+2012-10-05 19:46:50 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (3)
+2012-10-05 19:46:52 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (4)
+2012-10-05 19:46:52 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (4)
+2012-10-05 19:46:54 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (5)
+2012-10-05 19:46:54 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (5)
+2012-10-05 19:46:56 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (6)
+2012-10-05 19:46:56 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (6)
+2012-10-05 19:46:58 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (7)
+2012-10-05 19:46:58 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (7)
+2012-10-05 19:47:00 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (8)
+2012-10-05 19:47:00 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (8)
+2012-10-05 19:47:02 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (9)
+2012-10-05 19:47:02 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (9)
+2012-10-05 19:47:04 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (10)
+2012-10-05 19:47:04 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (10)
+2012-10-05 19:47:06 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (11)
+2012-10-05 19:47:06 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (11)
+2012-10-05 19:47:08 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (12)
+2012-10-05 19:47:08 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (12)
+2012-10-05 19:47:10 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (13)
+2012-10-05 19:47:10 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (13)
+2012-10-05 19:47:12 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (14)
+2012-10-05 19:47:12 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (14)
+2012-10-05 19:47:14 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (15)
+2012-10-05 19:47:14 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (15)
+2012-10-05 19:47:16 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (16)
+2012-10-05 19:47:16 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (16)
+2012-10-05 19:47:18 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (17)
+2012-10-05 19:47:18 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (17)
+2012-10-05 19:47:20 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (18)
+2012-10-05 19:47:20 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (18)
+2012-10-05 19:47:22 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (19)
+2012-10-05 19:47:22 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (19)
+2012-10-05 19:47:24 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (20)
+2012-10-05 19:47:24 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (20)
+2012-10-05 19:47:26 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (21)
+2012-10-05 19:47:26 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (21)
+2012-10-05 19:47:28 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (22)
+2012-10-05 19:47:28 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (22)
+2012-10-05 19:47:30 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (23)
+2012-10-05 19:47:30 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (23)
+2012-10-05 19:47:32 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (24)
+2012-10-05 19:47:32 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (24)
+2012-10-05 19:47:34 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (25)
+2012-10-05 19:47:34 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (25)
+2012-10-05 19:47:36 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (26)
+2012-10-05 19:47:36 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (26)
+2012-10-05 19:47:38 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (27)
+2012-10-05 19:47:38 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (27)
+2012-10-05 19:47:40 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (28)
+2012-10-05 19:47:40 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (28)
+2012-10-05 19:47:42 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (29)
+2012-10-05 19:47:42 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (29)
+2012-10-05 19:47:44 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (30)
+2012-10-05 19:47:44 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (30)
+2012-10-05 19:47:46 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (31)
+2012-10-05 19:47:46 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (31)
+2012-10-05 19:47:48 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (32)
+2012-10-05 19:47:48 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (32)
+2012-10-05 19:47:50 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (33)
+2012-10-05 19:47:50 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (33)
+2012-10-05 19:47:52 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (34)
+2012-10-05 19:47:52 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (34)
+2012-10-05 19:47:54 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (35)
+2012-10-05 19:47:54 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (35)
+2012-10-05 19:47:56 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (36)
+2012-10-05 19:47:56 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (36)
+2012-10-05 19:47:58 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (37)
+2012-10-05 19:47:58 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (37)
+2012-10-05 19:48:00 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (38)
+2012-10-05 19:48:00 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (38)
+2012-10-05 19:48:02 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (39)
+2012-10-05 19:48:02 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (39)
+2012-10-05 19:48:04 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (40)
+2012-10-05 19:48:04 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (40)
+2012-10-05 19:48:06 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (41)
+2012-10-05 19:48:06 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (41)
+2012-10-05 19:48:06 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 19:48:06 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 19:48:08 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (42)
+2012-10-05 19:48:08 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (42)
+2012-10-05 19:48:10 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (43)
+2012-10-05 19:48:10 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (43)
+2012-10-05 19:48:12 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (44)
+2012-10-05 19:48:12 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (44)
+2012-10-05 19:48:14 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (45)
+2012-10-05 19:48:14 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (45)
+2012-10-05 19:48:16 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (46)
+2012-10-05 19:48:16 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (46)
+2012-10-05 19:48:18 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (47)
+2012-10-05 19:48:18 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (47)
+2012-10-05 19:48:20 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (48)
+2012-10-05 19:48:20 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (48)
+2012-10-05 19:48:22 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (49)
+2012-10-05 19:48:22 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (49)
+2012-10-05 19:48:24 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (50)
+2012-10-05 19:48:24 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (50)
+2012-10-05 19:48:26 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (51)
+2012-10-05 19:48:26 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (51)
+2012-10-05 19:48:28 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (52)
+2012-10-05 19:48:28 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (52)
+2012-10-05 19:48:30 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (53)
+2012-10-05 19:48:30 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (53)
+2012-10-05 19:48:32 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (54)
+2012-10-05 19:48:32 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (54)
+2012-10-05 19:48:34 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (55)
+2012-10-05 19:48:34 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (55)
+2012-10-05 19:48:36 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (56)
+2012-10-05 19:48:36 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (56)
+2012-10-05 19:48:38 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (57)
+2012-10-05 19:48:38 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (57)
+2012-10-05 19:48:40 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (58)
+2012-10-05 19:48:40 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (58)
+2012-10-05 19:48:42 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (59)
+2012-10-05 19:48:42 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (59)
+2012-10-05 19:48:44 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (60)
+2012-10-05 19:48:44 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (60)
+2012-10-05 19:48:46 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (61)
+2012-10-05 19:48:46 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (61)
+2012-10-05 19:48:48 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (62)
+2012-10-05 19:48:48 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (62)
+2012-10-05 19:48:50 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (63)
+2012-10-05 19:48:50 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (63)
+2012-10-05 19:48:52 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (64)
+2012-10-05 19:48:52 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (64)
+2012-10-05 19:48:54 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (65)
+2012-10-05 19:48:54 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (65)
+2012-10-05 19:48:56 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (66)
+2012-10-05 19:48:56 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (66)
+2012-10-05 19:48:58 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (67)
+2012-10-05 19:48:58 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (67)
+2012-10-05 19:49:00 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (68)
+2012-10-05 19:49:00 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (68)
+2012-10-05 19:49:02 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (69)
+2012-10-05 19:49:02 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (69)
+2012-10-05 19:49:04 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (70)
+2012-10-05 19:49:04 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (70)
+2012-10-05 19:49:06 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (71)
+2012-10-05 19:49:06 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (71)
+2012-10-05 19:49:08 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (72)
+2012-10-05 19:49:08 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (72)
+2012-10-05 19:49:10 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (73)
+2012-10-05 19:49:10 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (73)
+2012-10-05 19:49:12 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (74)
+2012-10-05 19:49:12 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (74)
+2012-10-05 19:49:14 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (75)
+2012-10-05 19:49:14 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (75)
+2012-10-05 19:49:16 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (76)
+2012-10-05 19:49:16 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (76)
+2012-10-05 19:49:18 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (77)
+2012-10-05 19:49:18 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (77)
+2012-10-05 19:49:20 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (78)
+2012-10-05 19:49:20 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (78)
+2012-10-05 19:49:22 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (79)
+2012-10-05 19:49:22 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (79)
+2012-10-05 19:49:24 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (80)
+2012-10-05 19:49:24 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (80)
+2012-10-05 19:49:26 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (81)
+2012-10-05 19:49:26 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (81)
+2012-10-05 19:49:28 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (82)
+2012-10-05 19:49:28 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (82)
+2012-10-05 19:49:30 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (83)
+2012-10-05 19:49:30 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (83)
+2012-10-05 19:49:32 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (84)
+2012-10-05 19:49:32 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (84)
+2012-10-05 19:49:34 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (85)
+2012-10-05 19:49:34 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (85)
+2012-10-05 19:49:36 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (86)
+2012-10-05 19:49:36 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (86)
+2012-10-05 19:49:38 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (87)
+2012-10-05 19:49:38 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (87)
+2012-10-05 19:49:40 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (88)
+2012-10-05 19:49:40 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (88)
+2012-10-05 19:49:42 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (89)
+2012-10-05 19:49:42 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (89)
+2012-10-05 19:49:44 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (90)
+2012-10-05 19:49:44 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (90)
+2012-10-05 19:49:46 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (91)
+2012-10-05 19:49:46 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (91)
+2012-10-05 19:49:48 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (92)
+2012-10-05 19:49:48 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (92)
+2012-10-05 19:49:50 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (93)
+2012-10-05 19:49:50 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (93)
+2012-10-05 19:49:52 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (94)
+2012-10-05 19:49:52 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (94)
+2012-10-05 19:49:54 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (95)
+2012-10-05 19:49:54 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (95)
+2012-10-05 19:49:56 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (96)
+2012-10-05 19:49:56 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (96)
+2012-10-05 19:49:57 - msarullo.utils.contentgen.dropListener - INFO - Successfully dropped listener:  4320619472
+2012-10-05 19:49:57 - msarullo.utils.contentgen.addListener - INFO - Successfully added listener:  4320620496
+2012-10-05 19:49:57 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 19:49:58 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (97)
+2012-10-05 19:49:58 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (97)
+2012-10-05 19:50:00 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (98)
+2012-10-05 19:50:00 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (98)
+2012-10-05 19:50:02 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (99)
+2012-10-05 19:50:02 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (99)
+2012-10-05 19:50:04 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (100)
+2012-10-05 19:50:04 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (100)
+2012-10-05 19:50:06 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (101)
+2012-10-05 19:50:06 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (101)
+2012-10-05 19:50:08 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (102)
+2012-10-05 19:50:08 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (102)
+2012-10-05 19:50:10 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (103)
+2012-10-05 19:50:10 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (103)
+2012-10-05 19:50:12 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (104)
+2012-10-05 19:50:12 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (104)
+2012-10-05 19:50:14 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (105)
+2012-10-05 19:50:14 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (105)
+2012-10-05 19:50:16 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (106)
+2012-10-05 19:50:16 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (106)
+2012-10-05 19:50:18 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (107)
+2012-10-05 19:50:18 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (107)
+2012-10-05 19:50:20 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (108)
+2012-10-05 19:50:20 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (108)
+2012-10-05 19:50:22 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (109)
+2012-10-05 19:50:22 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (109)
+2012-10-05 19:50:24 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (110)
+2012-10-05 19:50:24 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (110)
+2012-10-05 19:50:26 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (111)
+2012-10-05 19:50:26 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (111)
+2012-10-05 19:50:28 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (112)
+2012-10-05 19:50:28 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (112)
+2012-10-05 19:50:30 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (113)
+2012-10-05 19:50:30 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (113)
+2012-10-05 19:50:32 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (114)
+2012-10-05 19:50:32 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (114)
+2012-10-05 19:50:34 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (115)
+2012-10-05 19:50:34 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (115)
+2012-10-05 19:50:36 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (116)
+2012-10-05 19:50:36 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (116)
+2012-10-05 19:50:38 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (117)
+2012-10-05 19:50:38 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (117)
+2012-10-05 19:50:40 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (118)
+2012-10-05 19:50:40 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (118)
+2012-10-05 19:50:42 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (119)
+2012-10-05 19:50:42 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (119)
+2012-10-05 19:50:44 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (120)
+2012-10-05 19:50:44 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (120)
+2012-10-05 19:50:46 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (121)
+2012-10-05 19:50:46 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (121)
+2012-10-05 19:50:48 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (122)
+2012-10-05 19:50:48 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (122)
+2012-10-05 19:50:50 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (123)
+2012-10-05 19:50:50 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (123)
+2012-10-05 19:50:52 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (124)
+2012-10-05 19:50:52 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (124)
+2012-10-05 19:50:54 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (125)
+2012-10-05 19:50:54 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (125)
+2012-10-05 19:50:56 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (126)
+2012-10-05 19:50:56 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (126)
+2012-10-05 19:51:11 - __main__ - INFO - Started
+2012-10-05 19:51:11 - __main__ - INFO - Starting Content Generator...
+2012-10-05 19:51:11 - msarullo.utils.contentgen.run - DEBUG - Content Generator Thread beginning
+2012-10-05 19:51:11 - __main__ - INFO - Starting Tornado...
+2012-10-05 19:51:11 - __main__ - INFO - Server running on port 1313, Hit <CTRL-C> to stop
+2012-10-05 19:51:13 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (0)
+2012-10-05 19:51:15 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (1)
+2012-10-05 19:51:16 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 19:51:16 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 19:51:16 - msarullo.utils.contentgen.addListener - INFO - Successfully added listener:  4320619472
+2012-10-05 19:51:16 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 19:51:17 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (2)
+2012-10-05 19:51:17 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (2)
+2012-10-05 19:51:19 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (3)
+2012-10-05 19:51:19 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (3)
+2012-10-05 19:51:21 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (4)
+2012-10-05 19:51:21 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (4)
+2012-10-05 19:51:23 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (5)
+2012-10-05 19:51:23 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (5)
+2012-10-05 19:51:25 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (6)
+2012-10-05 19:51:25 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (6)
+2012-10-05 19:51:27 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (7)
+2012-10-05 19:51:27 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (7)
+2012-10-05 19:51:29 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (8)
+2012-10-05 19:51:29 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (8)
+2012-10-05 19:51:31 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (9)
+2012-10-05 19:51:31 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (9)
+2012-10-05 19:51:33 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (10)
+2012-10-05 19:51:33 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (10)
+2012-10-05 19:51:35 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (11)
+2012-10-05 19:51:35 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (11)
+2012-10-05 19:51:52 - __main__ - INFO - Started
+2012-10-05 19:51:52 - __main__ - INFO - Starting Content Generator...
+2012-10-05 19:51:52 - msarullo.utils.contentgen.run - DEBUG - Content Generator Thread beginning
+2012-10-05 19:51:52 - __main__ - INFO - Starting Tornado...
+2012-10-05 19:51:52 - __main__ - INFO - Server running on port 1313, Hit <CTRL-C> to stop
+2012-10-05 19:51:54 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (0)
+2012-10-05 19:51:55 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 19:51:55 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 19:51:56 - msarullo.utils.contentgen.addListener - INFO - Successfully added listener:  4324825680
+2012-10-05 19:51:56 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 19:51:56 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (1)
+2012-10-05 19:51:56 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (1)
+2012-10-05 19:51:58 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (2)
+2012-10-05 19:51:58 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (2)
+2012-10-05 19:52:00 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (3)
+2012-10-05 19:52:00 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (3)
+2012-10-05 19:52:02 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (4)
+2012-10-05 19:52:02 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (4)
+2012-10-05 19:52:04 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (5)
+2012-10-05 19:52:04 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (5)
+2012-10-05 19:52:06 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (6)
+2012-10-05 19:52:06 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (6)
+2012-10-05 19:52:08 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (7)
+2012-10-05 19:52:08 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (7)
+2012-10-05 19:52:21 - __main__ - INFO - Started
+2012-10-05 19:52:21 - __main__ - INFO - Starting Content Generator...
+2012-10-05 19:52:21 - msarullo.utils.contentgen.run - DEBUG - Content Generator Thread beginning
+2012-10-05 19:52:21 - __main__ - INFO - Starting Tornado...
+2012-10-05 19:52:21 - __main__ - INFO - Server running on port 1313, Hit <CTRL-C> to stop
+2012-10-05 19:52:23 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (0)
+2012-10-05 19:52:25 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (1)
+2012-10-05 19:52:27 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (2)
+2012-10-05 19:52:27 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 19:52:27 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 19:52:27 - msarullo.utils.contentgen.addListener - INFO - Successfully added listener:  4324826064
+2012-10-05 19:52:27 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 19:52:29 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (3)
+2012-10-05 19:52:29 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (3)
+2012-10-05 19:52:31 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (4)
+2012-10-05 19:52:31 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (4)
+2012-10-05 19:52:33 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (5)
+2012-10-05 19:52:33 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (5)
+2012-10-05 19:52:35 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (6)
+2012-10-05 19:52:35 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (6)
+2012-10-05 19:52:37 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (7)
+2012-10-05 19:52:37 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (7)
+2012-10-05 19:52:39 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (8)
+2012-10-05 19:52:39 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (8)
+2012-10-05 19:52:41 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (9)
+2012-10-05 19:52:41 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (9)
+2012-10-05 19:52:43 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (10)
+2012-10-05 19:52:43 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (10)
+2012-10-05 19:52:45 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (11)
+2012-10-05 19:52:45 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (11)
+2012-10-05 19:52:47 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (12)
+2012-10-05 19:52:47 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (12)
+2012-10-05 19:52:49 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (13)
+2012-10-05 19:52:49 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (13)
+2012-10-05 19:52:51 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (14)
+2012-10-05 19:52:51 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (14)
+2012-10-05 19:53:16 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (15)
+2012-10-05 21:35:45 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (15)
+2012-10-05 21:35:47 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (16)
+2012-10-05 21:35:47 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (16)
+2012-10-05 21:35:49 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (17)
+2012-10-05 21:35:49 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (17)
+2012-10-05 21:35:51 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (18)
+2012-10-05 21:35:51 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (18)
+2012-10-05 21:35:53 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (19)
+2012-10-05 21:35:53 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (19)
+2012-10-05 21:35:55 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (20)
+2012-10-05 21:35:55 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (20)
+2012-10-05 21:35:57 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (21)
+2012-10-05 21:35:57 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (21)
+2012-10-05 21:35:59 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (22)
+2012-10-05 21:35:59 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (22)
+2012-10-05 21:36:01 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (23)
+2012-10-05 21:36:01 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (23)
+2012-10-05 21:36:03 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (24)
+2012-10-05 21:36:03 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (24)
+2012-10-05 21:36:05 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (25)
+2012-10-05 21:36:05 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (25)
+2012-10-05 21:36:24 - __main__ - INFO - Started
+2012-10-05 21:36:24 - __main__ - INFO - Starting Content Generator...
+2012-10-05 21:36:24 - msarullo.utils.contentgen.run - DEBUG - Content Generator Thread beginning
+2012-10-05 21:36:24 - __main__ - INFO - Starting Tornado...
+2012-10-05 21:36:24 - __main__ - INFO - Server running on port 1313, Hit <CTRL-C> to stop
+2012-10-05 21:36:26 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (0)
+2012-10-05 21:36:27 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 21:36:27 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 21:36:27 - msarullo.utils.contentgen.addListener - INFO - Successfully added listener:  4320619088
+2012-10-05 21:36:27 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 21:36:28 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (1)
+2012-10-05 21:36:28 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (1)
+2012-10-05 21:36:30 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (2)
+2012-10-05 21:36:30 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (2)
+2012-10-05 21:36:32 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (3)
+2012-10-05 21:36:32 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (3)
+2012-10-05 21:36:34 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (4)
+2012-10-05 21:36:34 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (4)
+2012-10-05 21:36:36 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (5)
+2012-10-05 21:36:36 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (5)
+2012-10-05 21:36:38 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (6)
+2012-10-05 21:36:38 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (6)
+2012-10-05 21:36:40 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (7)
+2012-10-05 21:36:40 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (7)
+2012-10-05 21:36:42 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (8)
+2012-10-05 21:36:42 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (8)
+2012-10-05 21:36:44 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (9)
+2012-10-05 21:36:44 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (9)
+2012-10-05 21:36:46 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (10)
+2012-10-05 21:36:46 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (10)
+2012-10-05 21:36:48 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (11)
+2012-10-05 21:36:48 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (11)
+2012-10-05 21:36:50 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (12)
+2012-10-05 21:36:50 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (12)
+2012-10-05 21:36:52 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (13)
+2012-10-05 21:36:52 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (13)
+2012-10-05 21:36:54 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (14)
+2012-10-05 21:36:54 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (14)
+2012-10-05 21:36:56 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (15)
+2012-10-05 21:36:56 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (15)
+2012-10-05 21:36:57 - msarullo.tornadoapp.handlers.default - DEBUG - Serving up default page.
+2012-10-05 21:36:57 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 200 - Duration: 0  - URL: http://localhost:1313/
+2012-10-05 21:36:58 - msarullo.utils.contentgen.dropListener - INFO - Successfully dropped listener:  4320619088
+2012-10-05 21:36:58 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (16)
+2012-10-05 21:36:58 - msarullo.utils.contentgen.addListener - INFO - Successfully added listener:  4320620496
+2012-10-05 21:36:58 - msarullo.tornadoapp.webapp - INFO - HTTP Status: 404 - Duration: 0  - URL: http://localhost:1313/favicon.ico
+2012-10-05 21:37:00 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (17)
+2012-10-05 21:37:00 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (17)
+2012-10-05 21:37:02 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (18)
+2012-10-05 21:37:02 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (18)
+2012-10-05 21:37:04 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (19)
+2012-10-05 21:37:04 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (19)
+2012-10-05 21:37:06 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (20)
+2012-10-05 21:37:06 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (20)
+2012-10-05 21:37:08 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (21)
+2012-10-05 21:37:08 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (21)
+2012-10-05 21:37:10 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (22)
+2012-10-05 21:37:10 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (22)
+2012-10-05 21:37:12 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (23)
+2012-10-05 21:37:12 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (23)
+2012-10-05 21:37:14 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (24)
+2012-10-05 21:37:14 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (24)
+2012-10-05 21:37:16 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (25)
+2012-10-05 21:37:16 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (25)
+2012-10-05 21:37:18 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (26)
+2012-10-05 21:37:18 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (26)
+2012-10-05 21:37:20 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (27)
+2012-10-05 21:37:20 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (27)
+2012-10-05 21:37:22 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (28)
+2012-10-05 21:37:22 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (28)
+2012-10-05 21:37:24 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (29)
+2012-10-05 21:37:24 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (29)
+2012-10-05 21:37:26 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (30)
+2012-10-05 21:37:26 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (30)
+2012-10-05 21:37:28 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (31)
+2012-10-05 21:37:28 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (31)
+2012-10-05 21:37:30 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (32)
+2012-10-05 21:37:30 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (32)
+2012-10-05 21:37:32 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (33)
+2012-10-05 21:37:32 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (33)
+2012-10-05 21:37:34 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (34)
+2012-10-05 21:37:34 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (34)
+2012-10-05 21:37:36 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (35)
+2012-10-05 21:37:36 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (35)
+2012-10-05 21:37:38 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (36)
+2012-10-05 21:37:38 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (36)
+2012-10-05 21:37:40 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (37)
+2012-10-05 21:37:40 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (37)
+2012-10-05 21:37:42 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (38)
+2012-10-05 21:37:42 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (38)
+2012-10-05 21:37:44 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (39)
+2012-10-05 21:37:44 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (39)
+2012-10-05 21:37:46 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (40)
+2012-10-05 21:37:46 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (40)
+2012-10-05 21:37:48 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (41)
+2012-10-05 21:37:48 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (41)
+2012-10-05 21:37:50 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (42)
+2012-10-05 21:37:50 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (42)
+2012-10-05 21:37:52 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (43)
+2012-10-05 21:37:52 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (43)
+2012-10-05 21:37:54 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (44)
+2012-10-05 21:37:54 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (44)
+2012-10-05 21:37:56 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (45)
+2012-10-05 21:37:56 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (45)
+2012-10-05 21:37:58 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (46)
+2012-10-05 21:37:58 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (46)
+2012-10-05 21:38:00 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (47)
+2012-10-05 21:38:00 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (47)
+2012-10-05 21:38:02 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (48)
+2012-10-05 21:38:02 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (48)
+2012-10-05 21:38:04 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (49)
+2012-10-05 21:38:04 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (49)
+2012-10-05 21:38:06 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (50)
+2012-10-05 21:38:06 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (50)
+2012-10-05 21:38:08 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (51)
+2012-10-05 21:38:08 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (51)
+2012-10-05 21:38:10 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (52)
+2012-10-05 21:38:10 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (52)
+2012-10-05 21:38:12 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (53)
+2012-10-05 21:38:12 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (53)
+2012-10-05 21:38:14 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (54)
+2012-10-05 21:38:14 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (54)
+2012-10-05 21:38:16 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (55)
+2012-10-05 21:38:16 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (55)
+2012-10-05 21:38:23 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (56)
+2012-10-05 21:38:23 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (56)
+2012-10-05 21:38:39 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (57)
+2012-10-05 21:38:45 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (57)
+2012-10-05 21:39:11 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (58)
+2012-10-05 21:39:11 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (58)
+2012-10-05 21:39:13 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (59)
+2012-10-05 21:39:13 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (59)
+2012-10-05 21:39:15 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (60)
+2012-10-05 21:39:15 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (60)
+2012-10-05 21:39:17 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (61)
+2012-10-05 21:39:17 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (61)
+2012-10-05 21:39:19 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (62)
+2012-10-05 21:39:19 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (62)
+2012-10-05 21:39:21 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (63)
+2012-10-05 21:39:21 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (63)
+2012-10-05 21:39:23 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (64)
+2012-10-05 21:39:23 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (64)
+2012-10-05 21:39:25 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (65)
+2012-10-05 21:39:25 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (65)
+2012-10-05 21:39:27 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (66)
+2012-10-05 21:39:27 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (66)
+2012-10-05 21:39:29 - msarullo.utils.contentgen.run - DEBUG - Generated item:  (67)
+2012-10-05 21:39:29 - msarullo.tornadoapp.handlers.default - INFO - Pushing message to the client:  (67)
