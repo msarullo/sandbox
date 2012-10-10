@@ -9,6 +9,7 @@ import time
 from abc import ABCMeta, abstractmethod
 from itertools import count
 from threading import Thread, Condition, Semaphore
+from datetime import datetime
 
 singletonGenerator = None
 singletonLock = Semaphore(1)
@@ -72,7 +73,7 @@ class ContentGenerator(Thread):
             if self.lock.acquire():
                 try:
                     if self.shouldRun:
-                        self.generator(logger, x)
+                        self.generator(logger, datetime.utcnow().strftime('UTC Time Stamp = %Y-%m-%d %H:%M:%S'))
                     else:
                         break
                 finally:
@@ -133,9 +134,9 @@ class ContentGenerator(Thread):
             return False
 
     
-    def generator(self, logger, counter):
+    def generator(self, logger, msg):
         # Assume we already have the lock
-        logger.debug("Generated item:  (%d)", counter)
+        logger.debug("Generated item:  (%s)", msg)
         
         for x in self.listeners:
-            x.onGeneration(str(counter))
+            x.onGeneration(msg)

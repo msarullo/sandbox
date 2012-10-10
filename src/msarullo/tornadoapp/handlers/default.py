@@ -5,57 +5,24 @@ Created on Oct 2, 2012
 '''
 
 import logging
-from msarullo.utils.contentgen import getContentGenerator, ContentGenerationListener
-from tornado import web, websocket
+from tornado import web
 from datetime import datetime
 
 mainPage = """
 <html>
   <head>
     <title>TestWebApp</title>
-    <script type="text/javascript">
-    <!--
-      var myWebSocketURL = 'ws://localhost:1313/websocket';
-      var myWebSocket;
-      
-      function handleWebSocketMessage(msg) {{
-        document.getElementById('myWebSocketTime').innerText = msg.data;
-      }}
-      
-      function initializeWebSocket() {{
-        myWebSocket = new WebSocket(myWebSocketURL);
-        myWebSocket.onmessage = handleWebSocketMessage;
-      }}
-    // -->
-    </script>
   </head>
-  <body onload="initializeWebSocket()">
-    Hello from the TestWebApp!
-    <br/><br/>
+  <body>
+    <h1>Python Test Web Application</h1>
+    <ul>
+      <li><a href="/websockettest">Web Sockets Test</a></li>
+      <li><a href="/nextapi">Next API</a></li>
+    </ul>
     Time page was rendered:  {dteNow}
-    <br/><br/>
-    Message from web socket:  <span id="myWebSocketTime" />
   </body>
 </html>
 """
-
-class WebSocketHandler(websocket.WebSocketHandler, ContentGenerationListener):
-    
-    logger = logging.getLogger(__name__)
-
-    def open(self):
-        getContentGenerator().addListener(self)
-
-    def on_message(self, msg):
-        self.logger.info('Received message from the client:  (%s)', msg)
-        
-    def on_close(self):
-        getContentGenerator().dropListener(self)
-
-    def onGeneration(self, msg):
-        self.logger.info('Pushing message to the client:  (%s)', msg)
-        self.write_message(msg)
-
 
 class DefaultHandler(web.RequestHandler):
     

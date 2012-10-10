@@ -28,7 +28,7 @@ class NextAPICaller(object):
         
         collections = []
         for collection in body['collections']:
-            logging.debug('found collection:  %s - %s - %s', collection['id'], collection['name'], collection['slug'])
+            logging.debug('found collection:  %s', collection['id'])
             collections.append(NextAPICollection(collection))
 
         return collections
