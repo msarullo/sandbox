@@ -1,3 +1,4 @@
 dist/
 src/msarullo/test-server.log
 *.pyc
+.DS_Store
