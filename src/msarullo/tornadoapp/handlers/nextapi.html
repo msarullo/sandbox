@@ -1,10 +1,178 @@
+<!DOCTYPE HTML>
 <html>
   <head>
     <title>Next API</title>
   </head>
+  <script src="/static/jquery.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  <!--
+    var nextQueryURL = 'http://localhost:1313/nextapi/query';
+    var nextQueryTimeout = 60000;
+
+    function toggleActionButtons(state) {
+      $('#btnNextQuerySubmit').context.disabled = (! state);
+      if (! state) {
+    	var tmp = $(nextRequest);
+        $('#nextRequest').val('Running query...');
+        $('#nextResponse').val('');
+        $('#nextLinks').html('');
+      }
+    }
+    
+    function setResourceInputs() {
+      var children = $(resources).children();
+   	  jQuery.each($(resources).children(), function(idx, child) {
+   		var item = $(child.value + 'Inputs');
+   		if (item !== undefined) {
+   			item.hide();
+   		}
+   	  })
+
+   	  var item = $($(resource).val() + 'Inputs');
+ 	  if (item !== undefined) {
+        item.show();
+      }
+    }
+    
+	function addEditionLinks(editions) {
+	}
+
+	function addCollectionLinks(collections) {
+		
+	}
+	
+	function addItemLinks(items) {
+		
+	}
+    
+    function handleNextQuery() {
+      toggleActionButtons(false);
+
+      var finalCB = function(event, request, settings) {
+    	var statusObj = event.statusCode();
+    	if (statusObj.status != 200) {
+          $(nextResponse).val('Error running query:  ' + statusObj.status + ' - ' + statusObj.statusText);
+    	} else {
+      	  $(nextResponse).val(statusObj.responseText);
+      	  var apiCall = eval('(' + statusObj.responseText + ')');
+    	  var strTop = 'RESPONSE:  '+apiCall.resp.status+' - '+apiCall.resp.reason;
+    	  strTop += '\nREQUEST:  '+apiCall.req.method+' '+apiCall.req.uri;
+    	  strTop += '\nURL:  '+apiCall.req.url;
+    	  
+    	  $(nextRequest).val(strTop);
+    	  $(nextResponse).val(JSON.stringify(apiCall.resp.body, undefined, 2));
+    	  if (apiCall.resp.body.editions !== undefined) {
+    		  addEditionLinks(apiCall.resp.body.editions);
+    	  } else if (apiCall.resp.body.collections !== undefined) {
+    		  addCollectionLinks(apiCall.resp.body.collections);
+    	  } else if (apiCall.resp.body.items !== undefined) {
+    		  addItemLinks(apiCall.resp.body.items);
+    	  }
+    	}
+        toggleActionButtons(true);
+      }
+
+      var fullURL = nextQueryURL + '?' + $(nextAPIQueryForm).serialize();
+      jQuery.ajax({
+          url: fullURL,
+          cache: false,
+          dataType: 'json',
+          timeout: nextQueryTimeout,
+          complete: finalCB
+        });
+    }
+  // -->
+  </script>
+  <style type="text/css">
+    div#header {
+      width:100%;
+    }
+    
+    div#footer {
+      width:100%;
+    }
+
+    div#mainPart {
+      display:block;
+      height:500px;
+      width:800px;
+    }
+    
+    div#leftSide {
+      float:left;
+      width:20%;
+      height:100%;
+    }
+    
+    div#rightSide {
+      float:right;
+      width:80%;
+      height:100%;
+    }
+    
+    textarea#nextRequest {
+      width:100%;
+      height:30%;
+    }
+
+    textarea#nextResponse {
+      float:left;
+      width:70%;
+      height:65%;
+    }
+
+    div#nextLinksArea {
+      float:right;
+      width:28%;
+      height:65%;
+    }
+    
+    span#editionsInputs {
+      display:none;
+    }
+  </style>
   <body>
-    <h1>Next API Inspector</h1>
-    <br/><br/>
-    Time page was rendered:  {dteNow}
+    <datalist id="hosts">
+      <option value="alpha.api.reuters.com">Alpha</option>
+      <option value="localhost">Local</option>
+    </datalist>
+    <datalist id="ports">
+      <option value="80" />
+      <option value="8080" />
+      <option value="1313" />
+    </datalist>
+    <datalist id="resources">
+      <option value="editions" />
+      <option value="collections" />
+      <option value="items" />
+    </datalist>
+    <div id="header">
+      <h1>Next API Browser</h1>
+    </div>
+    <div id="mainPart">
+      <div id="leftSide">
+        <h2>Options</h2>
+        <form id="nextAPIQueryForm" action="javascript:handleNextQuery()">
+          Host:  <input id="host" name="host" list="hosts" required="required" />
+          Port:  <input id="port" name="port" list="ports" required="required" />
+          Resource:  <input id="resource" name="resource" list="resources" required="required" onchange="javascript:setResourceInputs()" />
+          <span id="editionsInputs">
+	        Edition Slug:  <input id="edSlug" name="slug" />
+          </span>
+          <input id="btnNextQuerySubmit" type="submit" />
+        </form>
+      </div>
+      <div id="rightSide">
+        <h2>Results</h2>
+        <textarea id="nextRequest" readonly="readonly">Submit a request on the left.</textarea>
+        <textarea id="nextResponse" readonly="readonly"></textarea>
+        <div id="nextLinksArea">
+          <h3>Links</h3>
+          <ul id="nextLinks"></ul>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+    </div>
   </body>
 </html>
